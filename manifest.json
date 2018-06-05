@@ -1,0 +1,27 @@
+{
+	"name": "HBO GO Basic Extension",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Added basic functionality to HBO Go web player",
+	"icons": {
+		"128":"hbogo.png"
+	},
+	"browser_action": {
+		"default_title": "HBO Go Basic Extension"
+	},
+	"permissions": [
+		"http://*/*","https://*/* "
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_end" 
+		}
+	]
+}
