@@ -5,7 +5,7 @@ document.body.onkeyup = function(e){
 			document.getElementById("player-playPause").click()
 		}
 	} else if(e.keyCode == 70) {
-		var btnPlay = document.getElementById("player-playPause").click();
+		var btnPlay = document.getElementById("player-playPause");
 		var enter = document.getElementById("player-fullscreen");
 		var exit = document.getElementById("player-leave-fullscreen");
 		if(enter && exit && btnPlay) {
